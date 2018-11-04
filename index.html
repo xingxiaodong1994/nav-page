@@ -30,7 +30,7 @@
                 var  button1=tag('button',{textContent:'编辑',id:row[index2]})
                 var img1=tag('img')
                     if(hash[row[index2]]){
-                     img1.src='http://'+hash[row[index2]]+'/favicon.ico'
+                     img1.src='https://'+hash[row[index2]]+'/favicon.ico'
                     }else{
                         img1.src='./ico.png'
                     }
@@ -48,7 +48,7 @@
                     var key=xzkjcnxlkcjlk['target']['id']//qwer
                     var andy=prompt('给我一个网址')
                         hash[key]= andy //hash变更
-                        img2.src='http://'+andy+'/favicon.ico'
+                        img2.src='https://'+andy+'/favicon.ico'
                              //图片错误未加载执行下边代码
                         img2.onerror=function(xxx){
                              //console.log('下载失败')
@@ -74,7 +74,7 @@
             website = hash[key]
            // console.log(website)
            // location.href= 'http://'+website
-           window.open('http://'+website,'_blank')
+           window.open('https://'+website,'_blank')
         }
 
 
