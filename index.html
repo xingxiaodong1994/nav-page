@@ -71,10 +71,15 @@
             //console.log('你按键的所有信息是')
            // console.log(xzkjcnxlkcjlk)
             key = xzkjcnxlkcjlk['key']
-            website = hash[key]
+            website = hash[key] 
            // console.log(website)
            // location.href= 'http://'+website
-           window.open('https://'+website,'_blank')
+           if(website){
+            window.open('https://'+website,'_blank')
+           }else{
+               alert("网址未输入,请编辑网址！")
+           }
+           
         }
 
 
@@ -88,10 +93,10 @@
                  length:3
              }
              //哈希不是数组，不需要length;
-             var hash={ q:'qq.com', w:'weibo.com', e:'ele.me',
+             var hash={ q:undefined, w:'weibo.com', e:'ele.me',
               r:'renren.com', t:undefined, y:undefined, u:undefined, i:'iqiyi.com',
-              o:'opera.com', p:undefined, a:'acfun.cn', s:'sohu.com', z:'zhihu.com',
-              m:' www.mcdonalds.com.cn' }
+              o:'opera.com', p:undefined, a:undefined, s:'sohu.com', z:'zhihu.com',
+              m:undefined }
 
              //取出localStorage中存的hash 
              var hashInLocalStorage=getFromLocalStorage('zzz')
